@@ -10,6 +10,4 @@ Pod::Spec.new do |s|
   s.resources    = 'APIKit/Classes/*.{h.m}'
   s.requires_arc = true
   s.platform     = :ios
-  s.frameworks   = 'AFNetworking'
-  s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => '"$(PODS_ROOT)/AFNetworking"' }
 end
