@@ -9,5 +9,5 @@ Pod::Spec.new do |s|
   s.resource	 = 'Meridian.bundle'
   s.vendored_frameworks = 'Meridian.framework'
   s.frameworks = 'Foundation', 'UIKit', 'CoreLocation', 'CoreMotion', 'CoreBluetooth', 'SystemConfiguration', 'MobileCoreServices'
-  s.library = 'c++', 'xml'
+  s.library = 'c++', 'xml2'
 end
