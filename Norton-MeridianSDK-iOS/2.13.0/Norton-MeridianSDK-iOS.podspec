@@ -1,14 +1,24 @@
 Pod::Spec.new do |s|
+  s.platform     = :ios
+  s.ios.deployment_target = '10.0'
   s.name         = "Norton-MeridianSDK-iOS"
+  s.summary 	 = "Meridian SDK"
+  s.requires_arc = true
+
   s.version      = "2.13.0"
-  s.summary      = "Norton-MeridianSDK-iOS"
+
   s.license      = 'Private'
-  s.homepage     = "http://www.nortonhealthcare.org"
+
   s.author       = { "Jeffrey Jackson" => "jj@autolean.com" }
+
+  s.homepage     = "http://www.nortonhealthcare.org"
+
   s.source       = { :git => "git@github.com:AutoLean/Norton-MeridianSDK-iOS.git", :tag => "2.13.0" }
-  s.module_name  = 'Meridian'
-  s.resource	 = 'Meridian.bundle'
-  s.vendored_frameworks = 'Meridian.framework'
+
   s.frameworks = 'Foundation', 'UIKit', 'CoreLocation', 'CoreMotion', 'CoreBluetooth', 'SystemConfiguration', 'MobileCoreServices'
+
+  s.module_name  = 'Meridian'
+  s.resource	 = 'Meridian.bundle/**/*.*'
+  s.vendored_frameworks = 'Meridian.framework'
   s.library = 'c++', 'xml2'
 end
