@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "NortonAPIKit"
+  s.name         = "Norton-APIKit-iOS"
   s.version      = "2.4"
   s.summary      = "API Layer for Norton Healthcare iOS Apps"
   s.homepage     = "http://www.nortonhealthcare.com"
